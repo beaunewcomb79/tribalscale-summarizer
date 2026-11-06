@@ -1,0 +1,86 @@
+{
+  "summary": "The Northwind mobile app team closed 23 of 31 sprint 14 tickets and is about one week behind, mainly due to offline sync and payment provider integration. Offline sync still fails two Android integration tests; Marcus expects a fix by Thursday. The client returned the SOW with three redlines, and the warranty extension from 30 to 60 days needs an engineering cost estimate before Dana can respond. Launch remains 20 November, but Priya will propose a one-week slip to the steering committee if the offline sync fix is not green by Monday 10 November.",
+  "action_items": [
+    {
+      "text": "Send Dana the cost estimate for extending the warranty period from 30 to 60 days",
+      "owner": "Marcus Chen",
+      "due": "end of day Wednesday",
+      "priority": "high",
+      "source_quote": "Marcus agreed to get her the warranty cost estimate by end of day Wednesday.",
+      "grounded": true
+    },
+    {
+      "text": "Send the revised statement of work back to the client",
+      "owner": "Dana Whitfield",
+      "due": "Friday, 7 November",
+      "priority": "high",
+      "source_quote": "Dana committed to sending the revised SOW back to the client by Friday, 7 November",
+      "grounded": true
+    },
+    {
+      "text": "Schedule the security review with the vendor for sprint 15",
+      "owner": "Marcus Chen",
+      "due": "before the end of this week",
+      "priority": "medium",
+      "source_quote": "Marcus will schedule the security review with the vendor for sprint 15",
+      "grounded": true
+    }
+  ],
+  "metadata": {
+    "request_id": "0fa66e4c-a41b-4e07-9e95-9f62178911aa",
+    "model": "claude-opus-5-5",
+    "prompt_version": "v2",
+    "stop_reason": "end_turn",
+    "app_retries": 0,
+    "timing_ms": {
+      "total": 8705,
+      "summarize": 4969,
+      "judge": 3736
+    },
+    "usage": {
+      "input_tokens": 2090,
+      "output_tokens": 482,
+      "thinking_tokens": 0,
+      "estimated_cost_usd": 0.018
+    },
+    "total_cost_usd": 0.032452,
+    "input_stats": {
+      "chars": 2430,
+      "words": 414,
+      "sentences": 23,
+      "est_tokens": 607
+    },
+    "output_stats": {
+      "summary_words": 94,
+      "compression_ratio": 0.227,
+      "action_item_count": 3
+    },
+    "checks": {
+      "action_item_count_ok": true,
+      "summary_length_ok": true,
+      "summary_shorter_than_input": true,
+      "items_verb_first": true,
+      "quotes_found_in_source": "3/3",
+      "novel_numbers_in_summary": []
+    },
+    "evaluation": {
+      "faithfulness": 5,
+      "coverage": 4,
+      "actionability": 5,
+      "rationale": {
+        "faithfulness": "Every claim in the summary and each action item, including owners and due dates, matches the document.",
+        "coverage": "The summary captures status, offline sync risk, the SOW redlines, and the launch/slip condition, but omits the checkout redesign, the missed security review, the library-upgrade dependency, and budget figures.",
+        "actionability": "All three items are verb-first, concrete, owned, and dated, and they represent the most important commitments; Sofia's error-state task is arguably comparable but not clearly more important."
+      },
+      "unsupported_claims": [],
+      "model": "claude-opus-5-5",
+      "usage": {
+        "input_tokens": 2553,
+        "output_tokens": 212,
+        "thinking_tokens": 0,
+        "estimated_cost_usd": 0.014452
+      }
+    },
+    "evaluation_error": null
+  }
+}

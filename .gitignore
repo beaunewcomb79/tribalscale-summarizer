@@ -1,0 +1,25 @@
+# secrets
+.env
+*.env
+!.env.example
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# local run logs (per-request analytics)
+logs/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+
+# sdd workspace (scratch)
+.superpowers/
